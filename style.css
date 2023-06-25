@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+/* NavBar strats */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    margin-bottom: 5px;
+    position: absolute;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+.navbar-toggler span{
+    color:rgb(51, 151, 194);
+}
+.navbar-nav{
+    margin-left: 550px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color:black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background:rgb(51, 151, 194) ;
+    color:white;
+}
+#navbar form button{
+    background:rgb(51, 151, 194);
+    color:white;
+    border: none;
+}
+/* NavBar ends */
+
+/* HomeSession starts */
+.home{
+    height: 93vh;
+    background-image:url(./images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color:white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color:white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color:rgb(250, 221, 75);
+    text-shadow: 0px 1px 1px black;
+    animation:changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Italy";}
+    60%{content: "Turkey";}
+}
+.home .content p{
+    color:rgb(246, 33, 86);
+    font-size: 15px;    
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color:black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background:rgb(1, 97, 214) ;
+    color:white;
+}
+@media(max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media(max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* HomeSession ends */
+
+/* Section Book starts  */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    box-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: rgb(51, 151, 194);
+}
+.book .card{
+    border-radius: 0px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    position: 10px;
+    color:black;
+    border:none;
+    outline:none;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize:none;
+    box-shadow:0px 5px 5px -6px black;
+    height: 300px;
+}
+.book .submit{
+    width:100px;
+    font-size: 17px;
+    font-weight: 550;
+    background:rgb(1, 97, 214) ;
+    color:white;
+    margin-top:20px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 110px;
+}
+@media(max-width:765px){
+    .book{
+        padding:0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+
+/* Section Book ends  */
+
+/* Section pakages starts  */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color:rgb(51, 151, 194);
+}
+.packages .card{
+    border-radius: 5px;
+    border:none;
+    box-shadow: rgba(0,0,0,0.1)0px 4px 12px;
+    width: 400px;
+
+}
+.packages .card img{
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+ .checked{
+    color:#ffa500;
+ }   
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(1, 97, 214);
+    color:white;
+    border-radius: 5px;
+}
+
+/* Section packages ends  */
+/*  #008489 */
+
+/* Section Service starts */
+.services{
+    background: #f9f9f9;
+    margin-top:50px;
+}
+.services  .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align:center;
+    color:#FFD800;
+    margin-top:20px;
+}
+.services .card .card-body h3{
+    font-weight:600;
+}
+.services .card .card-body {
+    text-align: center;
+}
+
+/* Section Service ends */
+
+/* Section Gallary starts */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition:0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary ends */
+
+
+/* About starts */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;    
+}
+.about .card{
+    border-radius: 10px;   
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width:150px;
+    height:38px;
+    border:none;
+    border-radius:5px;
+    background:rgb(1, 97, 214);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px) {
+    .about{
+        padding: 0;
+    }
+}
+
+/* Abouit ends */
+
+/* Footer start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color:rgb(51, 151, 194);
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color:white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background:rgb(1, 97, 214);
+}
+
+
+/* Footer end */
